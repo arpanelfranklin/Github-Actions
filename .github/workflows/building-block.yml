@@ -9,12 +9,13 @@ jobs:
                 - name: say hello
                   run: echo "Hello, world"
     say-goodbye: 
-            runs-on: ubuntu:latest 
+            runs-on: ubuntu-latest 
             steps: 
-                - name: success step
-                  run: | 
-                    echo "This step succed"
-                    exit 0
-                - name: say goodbye 
-                  run: echo " GoodBye, world"
+            - name: success step
+              run: | 
+                echo "This step succeed"
+                exit 0
+            - name: say goodbye 
+              run: echo "GoodBye, world"
+                    
             
